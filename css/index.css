@@ -15,10 +15,10 @@ nav {
 }
 nav h1 {
   color: white;
-  font-family: "Great Vibes", cursive;
-  font-size: 1.5em;
+  font-size: 1.8em;
   padding-left: 1.5em;
-  font-family: "Playfair Display", serif;
+  font-family: "Darker Grotesque", sans-serif;
+  letter-spacing: 0.1em;
 }
 @media (max-width: 900px) {
   nav h1 {
@@ -52,6 +52,7 @@ nav .links a:hover {
 @media (max-width: 900px) {
   nav {
     height: 6em;
+    background: #656691;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -116,9 +117,10 @@ header img {
   position: absolute;
 }
 .header-container h1 {
-  font-size: 3.5em;
+  font-size: 3.1em;
   color: #656691;
   line-height: 1em;
+  letter-spacing: 0;
   font-family: "Great Vibes", cursive;
   font-family: "Darker Grotesque", sans-serif;
   font-family: "Playfair Display", serif;
@@ -205,163 +207,75 @@ header img {
   align-items: center;
   text-align: center;
   padding: 5em;
-  padding-top: 0;
-  justify-content: space-around;
+  padding-top: 3em;
+  justify-content: space-between;
   height: auto;
+  background-color: #9192bb;
   line-height: 2.2em;
   width: 100%;
   color: #5f0505;
+  background-image: linear-gradient(to top, #eadbdb, #dec5cd, #cdb2c4, #b4a0bf, #9192bb);
+  flex-wrap: wrap;
 }
-.first-container .left {
-  border-top: 5px solid #d2907f73;
-  background-color: #f7f7f7;
-  width: 45%;
-  height: 95vh;
-  padding: 3em 5em;
-  padding-bottom: 0;
+.first-container .testimonial-box {
+  width: 30%;
+  height: 23em;
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-.first-container .left #intro {
-  line-height: 1.9em;
+.first-container .testimonial-box .text-testimonial {
+  padding: 2em;
+  padding-top: 6em;
 }
-.first-container .left section ul {
-  text-align: left;
-  padding: 1em 0;
-}
-.first-container .left #contact ul li {
-  list-style: none;
-  font-size: 1em;
-}
-.first-container .left #skills {
+.first-container .testimonial-box .hidden {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
-@media (max-width: 1296px) {
-  .first-container .left #skills {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .first-container .left #skills h3 {
-    align-self: center;
-  }
+.first-container .testimonial-box .hidden .person {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  border: 10px solid #9192bb;
+  height: 11em;
+  width: auto;
+  border-radius: 50em;
 }
-@media (max-width: 1296px) {
-  .first-container .left {
-    height: 135vh;
-  }
-}
-@media (max-width: 1171px) {
-  .first-container .left {
-    height: 145vh;
+@media (max-width: 1200px) {
+  .first-container .testimonial-box {
+    height: 27em;
   }
 }
-@media (max-width: 1076px) {
-  .first-container .left {
-    height: 165vh;
-  }
-}
-@media (max-width: 931px) {
-  .first-container .left {
-    width: 90%;
-    height: 130vh;
-  }
-}
-@media (max-width: 671px) {
-  .first-container .left {
-    height: 115vh;
+@media (max-width: 1030px) {
+  .first-container .testimonial-box {
+    margin-bottom: 7em;
+    width: 80%;
+    height: auto;
   }
 }
 @media (max-width: 500px) {
-  .first-container .left {
-    padding: 5em 2em;
+  .first-container .testimonial-box {
+    width: 95%;
   }
 }
-.first-container .right {
-  border-top: 5px solid #d2907f73;
-  background-color: #f7f7f7;
-  width: 45%;
-  height: 95vh;
-  padding: 2em 5em 0 5em;
-}
-.first-container .right img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2em;
-}
-.first-container .right section h3 {
-  margin-bottom: 0.5em;
-}
-.first-container .right section ul {
-  text-align: left;
-  padding: 1em 0;
-}
-.first-container .right #experience {
-  margin-top: 2em;
-}
-.first-container .right #experience .exp-title {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-}
-.first-container .right #experience p {
-  font-size: 0.9em;
-  line-height: 1.4em;
-  text-align: left;
-}
-@media (max-width: 1296px) {
-  .first-container .right {
-    height: 135vh;
-  }
-}
-@media (max-width: 1171px) {
-  .first-container .right {
-    height: 145vh;
-  }
-}
-@media (max-width: 1076px) {
-  .first-container .right {
-    height: 165vh;
-  }
-}
-@media (max-width: 931px) {
-  .first-container .right {
-    flex-direction: column;
-    width: 90%;
-    height: 90vh;
-  }
-}
-@media (max-width: 671px) {
-  .first-container .right {
-    height: 113vh;
-  }
-}
-@media (max-width: 533px) {
-  .first-container .right {
-    height: 140vh;
-    padding: 5em 2em;
-  }
-}
-@media (max-width: 460px) {
-  .first-container .right {
-    height: 160vh;
-  }
-}
-@media (max-width: 1040px) {
-  .first-container {
-    padding: 5em 0;
-  }
-}
-@media (max-width: 931px) {
+@media (max-width: 1030px) {
   .first-container {
     flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .first-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .sect-title {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Open Sans Condensed", sans-serif;
   letter-spacing: 0.1em;
   font-weight: 600;
+  color: #656691;
 }
 footer {
   background: url("../images/nav.png");
@@ -376,7 +290,6 @@ footer {
   font-family: "Open Sans Condensed", sans-serif;
   letter-spacing: 0.1em;
   color: #f7f7f7;
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
   font-size: 1em;
 }
 html,
@@ -496,7 +409,7 @@ html,
 body {
   height: 100%;
   font-family: "Quicksand", sans-serif;
-  background-color: #eadbdb;
+  background-color: white;
 }
 body {
   height: auto;
