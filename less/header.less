@@ -2,6 +2,7 @@ header {
   width: 100%;
   //   position: relative;
   //   top: 1em;
+  user-select: none;
   height: auto;
   background-color: white;
   display: flex;
@@ -13,6 +14,11 @@ header {
   img {
     height: 100%;
     width: 100%;
+  }
+
+  @media (max-width: 1296px) {
+    position: relative;
+    top: 1.5em;
   }
 
   @media (max-width: 739px) {
