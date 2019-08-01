@@ -431,12 +431,95 @@ header img {
   background-color: #f34a2c;
   color: white;
 }
+.forth-container {
+  height: 40em;
+  width: 100%;
+  background: #f6f7f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forth-container h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 1em;
+  color: #656691;
+  font-family: "Playfair Display", serif;
+}
+.forth-container #submit {
+  font-family: "Playfair Display", serif;
+  background: #656691;
+  border: none;
+  color: white;
+}
 .sect-title {
   font-size: 1.3em;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #656691;
   font-family: "Playfair Display", serif;
+}
+.inner-container {
+  background-color: azure;
+  margin: 1.3em;
+  width: 40em;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (max-width: 650px) {
+  .inner-container {
+    width: 100%;
+  }
+}
+.inner-container .title {
+  text-align: center;
+  font-size: 1.6em;
+}
+::placeholder {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 1.5em;
+  color: #616161;
+}
+form input {
+  z-index: 2;
+  height: 2em;
+  border: 0.9px solid #9bb8c4;
+  padding: 1em;
+}
+form textarea {
+  margin-top: 3em;
+  width: 100%;
+  border: 0.9px solid #9bb8c4;
+  height: 15em;
+  resize: none;
+  padding: 1em 1.2em;
+}
+input#submit {
+  float: right;
+  background: none;
+  font-size: 1em;
+  border: 2px solid #618391;
+  border-radius: 1.2em;
+  margin: 2em;
+  letter-spacing: 0.15em;
+  width: 9em;
+  height: 2.7em;
+  transition: all 0.2s;
+}
+input#submit:hover {
+  color: white;
+  background-color: #c8c0db;
+}
+form p input:focus {
+  outline: none;
+  border: 1px solid #517e92;
+}
+form textarea:focus {
+  outline: none;
+  border: 1px solid #517e92;
 }
 footer {
   background: url("../images/nav.png");
@@ -450,7 +533,7 @@ footer {
   text-align: center;
   font-family: "Open Sans Condensed", sans-serif;
   letter-spacing: 0.1em;
-  color: #f7f7f7;
+  color: white;
   font-size: 1em;
 }
 html,

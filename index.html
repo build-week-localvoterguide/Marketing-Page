@@ -137,15 +137,37 @@
           </div>
         </div>
       </div>
-      <div class="third-container" id="contact">
+      <div class="third-container">
         <h2>Sounds exiting already?</h2>
         <a class="button">Search for candidates!</a>
       </div>
+      <div class="forth-container" id="contact">
+        <div class="inner-container">
+          <h2 class="title">Contact Us</h2>
+          <form id="form" method="post" action="/" onsubmit="validateForm()">
+            <p>
+              <input required type="text" name="name" placeholder="Full Name" />
+              <input required type="text" name="email" placeholder="Email" />
+            </p>
+            <p>
+              <textarea
+                required
+                name="message"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+            </p>
+
+            <p>
+              <input type="submit" name="submit" value="SUBMIT" id="submit" />
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
 
-    <script src="index.js"></script>
     <footer>
-      Copyright | Designed by Kate Efimova
+      © 2019 Local Voter Guide. All rights reserved
     </footer>
   </body>
 </html>
