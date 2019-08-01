@@ -311,6 +311,14 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-left: 1.5em solid #dec5cd;
+  border-right: 1.5em solid #dec5cd;
+}
+@media (max-width: 800px) {
+  .second-container {
+    border-left: 0.5em solid #dec5cd;
+    border-right: 0.5em solid #dec5cd;
+  }
 }
 .second-container .about-outer {
   height: auto;
@@ -337,13 +345,13 @@ header img {
 @media (max-width: 754px) {
   .second-container .about-outer img {
     width: 100%;
+    padding-bottom: 3em;
   }
 }
 .second-container .about-outer .about-text {
   text-align: center;
   letter-spacing: 0.15em;
   line-height: 2em;
-  box-sizing: border-box;
   padding: 3em;
   padding-top: 1.5em;
   padding-bottom: 5em;
@@ -351,6 +359,7 @@ header img {
 @media (max-width: 754px) {
   .second-container .about-outer .about-text {
     padding: 0;
+    padding-bottom: 5em;
   }
 }
 .second-container .about-outer .about-text h3 {
@@ -360,6 +369,11 @@ header img {
   color: #5f0505;
   font-weight: 600;
 }
+@media (max-width: 754px) {
+  .second-container .about-outer .about-text h3 {
+    text-align: center;
+  }
+}
 .second-container .about-outer .about-text h3:nth-child(1) {
   text-align: left;
   padding-left: 6em;
@@ -367,6 +381,7 @@ header img {
 @media (max-width: 754px) {
   .second-container .about-outer .about-text h3:nth-child(1) {
     text-align: center;
+    padding: 0;
   }
 }
 .second-container .about-outer .about-text h3:nth-child(3) {
@@ -376,10 +391,45 @@ header img {
 @media (max-width: 754px) {
   .second-container .about-outer .about-text h3:nth-child(3) {
     text-align: center;
+    padding: 0;
   }
 }
 .second-container .about-outer .about-text p:nth-child(2) {
   padding-bottom: 3em;
+}
+.third-container {
+  height: 50vh;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: url("../images/top-curve.svg");
+  background-size: cover;
+  background-color: #9192bb;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.third-container h2 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-family: "Darker Grotesque", sans-serif;
+  margin-bottom: 1.5em;
+}
+.third-container .button {
+  line-height: 3em;
+  transition: 0.15s all ease-in-out;
+  border-radius: 10em;
+  color: white;
+  text-align: center;
+  background-color: #656691;
+  padding: 0.2em 3em;
+}
+.third-container .button:hover {
+  background-color: #f34a2c;
+  color: white;
 }
 .sect-title {
   font-size: 1.3em;
